@@ -16,7 +16,7 @@
 import numpy as np
 import scipy.sparse as sp
 import scipy as sc
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 
 class PCRL_:

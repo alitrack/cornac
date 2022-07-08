@@ -168,7 +168,7 @@ class CDR(Recommender):
         return self
 
     def _fit_cdr(self):
-        import tensorflow as tf
+        import tensorflow.compat.v1 as tf
         from .model import Model
 
         n_users = self.train_set.num_users

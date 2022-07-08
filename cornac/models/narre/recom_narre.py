@@ -182,7 +182,7 @@ class NARRE(Recommender):
         return self
 
     def _fit_narre(self):
-        import tensorflow as tf
+        import tensorflow.compat.v1 as tf
         from tensorflow import keras
         from .narre import get_data
         from ...eval_methods.base_method import rating_eval
